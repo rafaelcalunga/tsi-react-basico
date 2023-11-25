@@ -1,38 +1,93 @@
+html {
+  background-color: #eee;
+}
+
 .App {
-  text-align: center;
+  padding: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.perfil {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 15px;
+  display: flex;
+  align-self: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.perfil:hover {
+  background-color: #fafafa;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.perfil img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.perfil img.online {
+  background-color: lightgreen;
+}
+
+.perfil img.offline {
+  background-color: #bbb;
+}
+
+.perfil .conteudo {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.perfil .info {
   display: flex;
   flex-direction: column;
+  align-self: center;
+  gap: 0.25rem;
+}
+
+.perfil .online {
+  color: green;
+}
+
+.perfil .offline {
+  color: grey;
+}
+
+form {
+  background-color: white;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 0.5rem;
+}
+
+input {
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: .5rem;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.botao-adicionar {
+  background-color: blue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.botao-remover {
+  background-color: red;
+  align-self: flex-end;
+  justify-content: flex-end;
 }
